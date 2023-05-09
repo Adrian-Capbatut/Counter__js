@@ -8,11 +8,11 @@
 }
 
 body {
- background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
-
+ background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgb(40, 95, 162) 100.2% );
 }
 
 .container {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   max-width: 1000px;
@@ -40,11 +40,22 @@ body {
   font-size: 16px;
   font-weight: 700;
   color: #fff;
-  min-width: 320px;
+  min-width: 360px;
 }
 
 .countdown-item {
-  background-color: blue;
+  background-color: transparent;
   padding: 6px;
   min-width: 65px;
+
+  background: linear-gradient(
+    50deg,
+    rgba(255, 255, 255, 0.4) 12%,
+    rgba(255, 255, 255, 0.1) 77%
+  );
+  box-shadow: 0px 4px 24px 1px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
 }
+
